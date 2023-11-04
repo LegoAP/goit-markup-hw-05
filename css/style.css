@@ -769,19 +769,19 @@ address {
 }
 
 .window-close-btn-icon {
-    fill: #E7E9FC;
+    fill: #2E2F42;
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.10);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.window-close-btn-icon:hover,
-.window-close-btn-icon:focus {
+.window-close-btn:hover .window-close-btn-icon,
+.window-close-btn:focus .window-close-btn-icon {
     fill: #ffffff;
 }
 
 .window-retreat-title {
-    color: #2E2F42;
+    color: #151635;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
