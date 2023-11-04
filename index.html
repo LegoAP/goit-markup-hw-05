@@ -458,12 +458,13 @@
                         <input class="footer-form-inpt" type="email" id="form_email_telegram" name="form-email-telegram"
                             placeholder="E-mail" required>
                     </label>
+                    <button class="footer-button-telegram" type="submit">Subscribe
+                        <svg class="button-telegram-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-telegram"></use>
+                        </svg>
+                    </button>
                 </form>
-                <button class="footer-button-telegram" type="submit">Subscribe
-                    <svg class="button-telegram-icon" width="24" height="24">
-                        <use href="./images/icons.svg#icon-telegram"></use>
-                    </svg>
-                </button>
+
             </div>
         </div>
 
@@ -472,7 +473,7 @@
     <div class="backdrop is-open">
         <div class="window window-retreat">
             <button class="window-close-btn" type="button" aria-label="modal close button">
-                <svg class="window-close-btn-icon" width="24" height="24">
+                <svg class="window-close-btn-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
@@ -481,11 +482,11 @@
             <form class="window-form">
 
                 <div class="window-form-container">
-                    <label class="window-form-container-label" for="use_first_name">Name</label>
+                    <label class="window-form-container-label" for="user-name">Name</label>
                     <div class="window-form-container-inp-icons">
-                        <input class="window-form-container-inp" type="text" name="use_first_name" id="use_first_name"
-                            required pattern="[a-zA-Zа-яА-ЯіІїЇєЄйЙ']+" title="Olexandr">
-                        <svg class="windows-form-container-icons" width="18px" height="18">
+                        <input class="window-form-container-inp" type="text" name="user-name" id="user-name" required
+                            pattern="[a-zA-Zа-яА-ЯіІїЇєЄйЙ']+" title="Olexandr">
+                        <svg class="windows-form-container-icons" width="18px" height="24">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
                     </div>
@@ -496,7 +497,7 @@
                     <div class="window-form-container-inp-icons">
                         <input class="window-form-container-inp" type="tel" name="use_number_tel" id="use_number_tel"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
-                        <svg class="windows-form-container-icons" width="18px" height="18">
+                        <svg class="windows-form-container-icons" width="18px" height="24">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
@@ -506,24 +507,24 @@
                     <label class="window-form-container-label" for="use_mail">Email</label>
                     <div class="window-form-container-inp-icons">
                         <input class="window-form-container-inp" type="email" name="use_mail" id="use_mail" required>
-                        <svg class="windows-form-container-icons" width="18px" height="18">
+                        <svg class="windows-form-container-icons" width="18px" height="24">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
                 </div>
 
-                <div class="window-form-container">
-                    <label class="window-form-container-label" for="use_comment">Comment</label>
-                    <textarea class="window-form-container-inp-comment" name="use_comment" id="use_comment"
+                <div class="window-form-container-comment">
+                    <label class="window-form-container-label" for="user-comment">Comment</label>
+                    <textarea class="window-form-container-inp-comment" name="user-comment" id="user-comment"
                         placeholder="Text input"></textarea>
                 </div>
 
                 <div class="window-form-container-checkbox">
-                    <input class="window-form-container-chekbox-inp visually-hidden" type="checkbox" name="use_police"
-                        value="true" id="check-police" required>
-                    <label class="window-form-container-chekbox-p" for="check-police">
+                    <input class="window-form-container-chekbox-inp visually-hidden" type="checkbox" name="user-privacy"
+                        value="true" id="user-privacy" required>
+                    <label class="window-form-container-chekbox-p" for="user-privacy">
                         <span class="window-form-span-checkbox">
-                            <svg class="window-form-span-checkbox-icon" width="10" height="9">
+                            <svg class="window-form-span-checkbox-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-checkbox"></use>
                             </svg>
                         </span>
