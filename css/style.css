@@ -766,7 +766,6 @@ address {
 .window-close-btn:focus {
     background-color: #404bbf;
     border: none;
-    fill: #ffffff;
 }
 
 .window-close-btn-icon {
@@ -942,7 +941,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.04em;
     background: #4D5AE5;
-    color: white;
+    color: #ffffff;
     display: block;
     min-width: 169px;
     height: 56px;
