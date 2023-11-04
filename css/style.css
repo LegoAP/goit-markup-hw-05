@@ -627,7 +627,57 @@ address {
 }
 
 
+.footer-fon {
+    margin-left: 192px;
+    width: 453px;
+    height: 80px;
+}
+
 .footer-form {}
+
+.footer-label {
+    width: 100%;
+    height: 40px;
+}
+
+.footer-form-title {
+    padding-bottom: 16px;
+}
+
+.footer-label-inpt {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: #2E2F42;
+    color: #fff;
+}
+
+.footer-label-inpt::placeholder {
+    color: #FfF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 0.5;
+    letter-spacing: 0.04em;
+}
+
+
+
+.button-telegram {
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 165px;
+    height: 40px;
+    border-radius: 4px;
+    background: #4D5AE5;
+    color: #fff;
+
+}
+
 
 /*================= /FOOTER ======================*/
 
@@ -658,6 +708,11 @@ address {
 
 /*================= WINDOW ======================*/
 /*================= /WINDOW ======================*/
+.window-retreat {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 .window {
     position: absolute;
     top: 50%;
@@ -667,6 +722,7 @@ address {
     min-height: 584px;
     border-radius: 4px;
     background-color: #FCFCFC;
+    padding-top: 72px;
 
 }
 
@@ -685,4 +741,169 @@ address {
     fill: #E7E9FC;
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.10);
+}
+
+.window-retreat-title {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+
+/* ============= FORM ============= */
+
+.window-form-container {
+    margin-bottom: 8px;
+}
+
+
+.window-form-container-label {
+    display: block;
+    margin-bottom: 4px;
+    color: #8E8F99;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+
+}
+
+.window-form-container-inp-icons {
+    position: relative;
+}
+
+.window-form-container-inp {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    padding-left: 38px;
+    transition: border 250ms linear;
+}
+
+.window-form-container-inp:focus {
+    border-color: #4D5AE5;
+    outline-color: transparent;
+    outline-offset: 4px;
+
+}
+
+.windows-form-container-icons {
+    position: absolute;
+    top: 25%;
+    left: 16px;
+
+    fill: #2E2F42;
+    stroke: #2E2F42;
+    transition: stroke 250ms linear;
+}
+
+.window-form-container-inp:focus+.windows-form-container-icons {
+    stroke: #4D5AE5;
+    fill: #4D5AE5;
+}
+
+.window-form-container-inp-comment {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    padding-left: 16px;
+    padding-top: 8px;
+    resize: none;
+    height: 120px;
+
+    color: rgba(46, 47, 66, 0.40);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    transform: border 250ms linear;
+}
+
+.window-form-container-inp-comment::placeholder {
+    color: rgba(46, 47, 66, 0.40);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+}
+
+.window-form-container-inp-comment:focus {
+    border-color: #4D5AE5;
+    outline-color: transparent;
+    outline-offset: 4px;
+    transform: border 250ms linear;
+}
+
+/* ============= CHECKBOX ============= */
+.window-form-container-checkbox {
+    margin-bottom: 24px;
+}
+
+.window-form-container-chekbox-p {
+    width: 338px;
+    color: #8E8F99;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+
+}
+
+.window-form-span-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    cursor: pointer;
+    border-radius: 2px;
+    fill: transparent;
+}
+
+.window-form-span-checkbox-icon {}
+
+.privacy-policy-link {
+    color: #4D5AE5;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+}
+
+/* коли чекбокс натискається спан змінює колір (іконка унаслідую білий колір) */
+.window-form-container-chekbox-inp:checked+.window-form-container-chekbox-p .window-form-span-checkbox {
+    background-color: #404BBF;
+    fill: #fff;
+}
+
+.window-form-container-chekbox-inp:focus+.window-form-container-chekbox-p .window-form-span-checkbox {
+    outline: 2px solid #4D5AE5;
+}
+
+/* ============= /CHECKBOX ============= */
+
+/* ============= /FORM ============= */
+.window-form-btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background: #4D5AE5;
+    color: white;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

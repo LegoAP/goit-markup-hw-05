@@ -451,22 +451,96 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-form">
-
+            <div class="footer-fon">
+                <form class="footer-form">
+                    <label class="footer-label" for="form_email_telegram">
+                        <p class="footer-form-title">Subscribe</p>
+                    </label>
+                    <input class="footer-label-inpt" type="email" id="form_email_telegram" name="form_email_telegram"
+                        placeholder="E-mail" required>
+                    <button class="button-telegram" type="submit">Subscribe
+                        <svg>
+                            <use href="./images/icons.svg#icon-telegram"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
+
     </footer>
 
-    <div class="backdrop">
-        <div class="window">
+    <div class="backdrop.is-open">
+        <div class="window window-retreat">
             <button class="window-close-btn" type="button" aria-label="modal close button">
                 <svg class="window-close-btn-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+
+            <p class="window-retreat-title">Leave your contacts and we will call you back</p>
+            <form class="window-form">
+
+                <div class="window-form-container">
+                    <label class="window-form-container-label" for="use_first_name">Name</label>
+                    <div class="window-form-container-inp-icons">
+                        <input class="window-form-container-inp" type="name" name="use_first_name" id="use_first_name"
+                            required pattern="[a-zA-Zа-яА-ЯіІїЇєЄйЙ']+" title="Olexandr">
+                        <svg class="windows-form-container-icons" width="18px" height="18">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="window-form-container">
+                    <label class="window-form-container-label" for="use_number_tel">Phone</label>
+                    <div class="window-form-container-inp-icons">
+                        <input class="window-form-container-inp" type="tel" name="use_number_tel" id="use_number_tel"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+                        <svg class="windows-form-container-icons" width="18px" height="18">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="window-form-container">
+                    <label class="window-form-container-label" for="use_mail">Email</label>
+                    <div class="window-form-container-inp-icons">
+                        <input class="window-form-container-inp" type="email" name="use_mail" id="use_mail" required>
+                        <svg class="windows-form-container-icons" width="18px" height="18">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="window-form-container">
+                    <label class="window-form-container-label" for="use_comment">Comment</label>
+                    <textarea class="window-form-container-inp-comment" name="use_comment" id="use_comment"
+                        placeholder="Text input"></textarea>
+                </div>
+
+                <div class="window-form-container-checkbox">
+                    <input class="window-form-container-chekbox-inp visually-hidden" type="checkbox" name="use_police"
+                        value="true" id="check-police" required>
+                    <label class="window-form-container-chekbox-p" for="check-police">
+                        <span class="window-form-span-checkbox">
+                            <svg class="window-form-span-checkbox-icon" width="10" height="9">
+                                <use href="./images/icons.svg#icon-checkbox"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the
+                        <a href="" class="privacy-policy-link">Privacy Policy</a>
+                    </label>
+
+                </div>
+
+                <button class="window-form-btn" type="submit">Send</button>
+
+            </form>
+
         </div>
     </div>
 
 </body>
 
 </html>
+<p class="window-form-container-chekbox-p"></p>
