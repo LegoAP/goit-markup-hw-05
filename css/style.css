@@ -77,9 +77,32 @@ address {
 
 }
 
-@media (min-width: 320px) {
+@media (min-width:767px) {
     .page-header {
-        /* padding: 17px 16px; */
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        padding: 1rem 0;
+        background-color: #fff;
+        border-bottom: 1px solid #e7e9fc;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    }
+
+    .page-nav-menu {
+        display: none;
+    }
+
+    .page-nav-menu-item {
+        display: none;
+    }
+
+    .page-nav-menu-link {
+        display: none;
+    }
+
+    .page-header-nav {
+        display: none;
     }
 }
 
